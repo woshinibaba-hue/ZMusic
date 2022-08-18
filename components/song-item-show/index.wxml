@@ -1,0 +1,15 @@
+<!--components/song-item-show/index.wxml-->
+<view class="song-item-show" bindtap="play">
+  <view class="index">{{index}}</view>
+  <view class="info">
+    <view class="name ellipsis">{{song.name}}</view>
+    <view class="source">
+      <image  src="/assets/images/icons/sq_icon.png" mode="scaleToFill" class="sq-icon" />
+      <view class="artist">
+        <text class="artists ellipsis">{{ song.artists[0] ? song.artists[0].name : song.ar[0].name }}</text>
+        <text class="dot">·</text>
+        <text class="album ellipsis">{{ song.album ? song.album.name : song.al.name }}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "video-mv-item": "../../components/video-mv-item/index"
+  }
+}

@@ -1,0 +1,35 @@
+/* components/area-header/index.wxss */
+
+.area-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35rpx 0;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.more .name {
+  font-size: 28rpx;
+  color: #777;
+  vertical-align: middle;
+}
+
+.more .img {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+/* :empty 伪类用于判断元素内是否没有包含子元素 */
+/* + 选择器用于选择当前元素的下一个元素(同级) */
+.more .slot:empty + .default {
+  display: block;
+}
+
+.default {
+  display: none;
+}

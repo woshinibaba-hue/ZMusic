@@ -1,0 +1,42 @@
+<!--pages/song-detail/index.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<block wx:if="{{songsDetail}}">
+  <view class="song-detail-head">
+    <block>
+      <!-- 背景图片 -->
+      <image class="bg-img" src="{{songsDetail.coverImgUrl}}" mode="aspectFill" />
+      <!-- 背景蒙版层 -->
+      <view class="mask" />
+    </block>
+
+    <!-- 内容部分 -->
+    <view class="content">
+      <view class="top">
+        <image class="cover" src="{{songsDetail.coverImgUrl}}" mode="aspectFill" />
+        <view class="info">
+          <view class="title ellipsis2">{{songsDetail.name}}</view>
+          <view class="author">
+            <image class="avatar" src="{{songsDetail.creator.avatarUrl}}" />
+            <text class="name">{{songsDetail.creator.nickname}}</text>
+          </view>
+          <view class="intro ellipsis">简介: {{songsDetail.description}}</view>
+        </view>
+      </view>
+      <view class="bottom">
+        <view class="favor">
+          <image class="icon" mode="widthFix" src="/assets/images/icons/favor_icon.png" />
+          <text class="count">{{format.countFormat(songsDetail.subscribedCount)}}</text>
+        </view>
+        <view class="share">
+          <image class="icon" mode="widthFix" src="/assets/images/icons/share_icon.png" />
+          <text class="count">{{format.countFormat(songsDetail.shareCount)}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="songs-list">
+    <block wx:for="{{songsDetail.tracks}}" wx:key="id">
+      <song-item-show song="{{item}}" index="{{ index + 1 }}" bindtap="playMusic"  data-index="{{index}}"/>
+    </block>
+  </view>
+</block>

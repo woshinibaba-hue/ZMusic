@@ -1,0 +1,13 @@
+<!--components/area-header/index.wxml-->
+<view class="area-header">
+  <view class="title">{{title}}</view>
+  <view class="more">
+    <view class="slot">
+      <slot></slot>
+    </view>
+    <view class="default" wx:if="{{show}}">
+      <text class="name">更多</text>
+      <image class="img" src="/assets/images/icons/arrow-right.png" />
+    </view>
+  </view>
+</view>

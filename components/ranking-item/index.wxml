@@ -1,0 +1,15 @@
+<!--components/ranking-item/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+
+<view class="ranking-item" bindtap="songsDetail">
+  <view class="info">
+    <view class="title">{{ranking.name}}</view>
+    <view class="song ellipsis" wx:for="{{ranking.tracks}}" wx:key="first">
+      {{index + 1}}.{{item.first}} <text class="author">- {{item.second}}</text>
+    </view>
+  </view>
+  <view class="img">
+    <image class="cover" src="{{format.formatImgSize(ranking.coverImgUrl, 110)}}" mode="widthFix" />
+    <view class="play-count">{{format.countFormat(ranking.playCount)}}</view>
+  </view>
+</view>

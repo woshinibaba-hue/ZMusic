@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/video-detail/index",
+          "query": "id=14487937",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search-detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "歌单详情",
+          "pathName": "pages/song-detail/index",
+          "query": "id=7044174061",
+          "scene": null
+        },
+        {
+          "name": "播放页",
+          "pathName": "pages/music-play/index",
+          "query": "id=1928857203",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

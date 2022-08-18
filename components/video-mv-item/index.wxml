@@ -1,0 +1,15 @@
+<!--components/video-mv-item/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+
+<view class="item">
+  <view class="cover">
+    <image src="{{ item.cover }}" class="img" mode="heightFix" />
+    <view class="video-info">
+      <view class="play-count play-icon">{{format.countFormat(item.playCount)}}</view>
+    </view>
+  </view>
+  <view class="info">
+    <text class="name">{{ item.name }}</text>
+    <text class="creator">{{item.artists[0].name}}</text>
+  </view>
+</view>

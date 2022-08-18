@@ -1,0 +1,59 @@
+/**
+ * 返回格式化之后的播放量
+ * @param {Number} count 播放量
+ * @returns {String} count
+ */
+var countFormat = function (count) {
+  count = parseInt(count)
+
+  if (count > 100000000) {
+    return (count / 100000000).toFixed(1) + '亿'
+  } else if (count > 10000) {
+    return (count / 10000).toFixed(1) + '万'
+  } else {
+    return count + ''
+  }
+}
+
+/**
+ * @param {String} str 需要拼接的字符串
+ * @returns {String} str
+ */
+var padLeftZero = function (str) {
+  str = str.toString()
+  return ('00' + str).slice(str.length)
+}
+
+/**
+ * 返回格式化之后的时间格式 例如：03:11
+ * @param {Number} duration 时间戳
+ * @returns {String} time
+ */
+var durationFormat = function (duration) {
+  // 将时间戳转换为秒
+  duration = duration / 1000
+
+  // 获取分钟
+  var minute = Math.floor(duration / 60)
+  // 获取秒钟
+  var second = Math.floor(duration % 60)
+
+  return padLeftZero(minute) + ':' + padLeftZero(second)
+}
+
+/**
+ * 获取指定大小图片
+ * @param {string} url 图片url路径
+ * @param {number} w 图片宽度
+ * @param {number} h 图片高度
+ * @returns {string}
+ */
+function formatImgSize(url, w, h = w) {
+  return url + '?param=' + w + 'y' + h
+}
+
+module.exports = {
+  countFormat: countFormat,
+  durationFormat: durationFormat,
+  formatImgSize: formatImgSize
+}

@@ -1,0 +1,10 @@
+<!--components/song-menu-item/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+
+<view class="song-menu-item" bindtap="songsDetail">
+  <view class="top">
+    <image src="{{song.coverImgUrl}}" mode="widthFix" class="img" />
+    <view class="play-count">{{format.countFormat(song.playCount)}}</view>
+  </view>
+  <view class="bottom ellipsis2">{{song.description}}</view>
+</view>

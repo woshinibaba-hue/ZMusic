@@ -1,0 +1,50 @@
+/* components/ranking-item/index.wxss */
+.ranking-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background-color: #eee;
+  margin-bottom: 15rpx;
+}
+
+.info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.info .title {
+  font-size: 36rpx;
+  margin-bottom: 8rpx;
+}
+
+.info .song {
+  width: 350rpx;
+  font-size: 26rpx;
+  margin: 0 0 8rpx 15rpx;
+}
+
+.author {
+  color: #999;
+}
+
+.ranking-item .img {
+  position: relative;
+  width: 220rpx;
+  font-size: 0;
+}
+
+.ranking-item .img .cover {
+  width: 100%;
+}
+.ranking-item .img .play-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 3rpx 8rpx;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 10rpx;
+  background-color: rgba(0, 0, 0, .4);
+}

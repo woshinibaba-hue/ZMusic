@@ -1,0 +1,19 @@
+/* components/song-menu-list/index.wxss */
+.scroll-view {
+  /* 去除左侧空白区域 */
+  position: relative;
+  left: -20rpx;
+  
+  width: 100vw;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  width: 220rpx;
+  margin-left: 20rpx;
+}
+
+.item:last-of-type {
+  margin-right: 20rpx;
+}

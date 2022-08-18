@@ -1,0 +1,13 @@
+<!--components/song-item/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+
+<view class="song-item" bindtap="play">
+  <image class="img" mode="widthFix" src="{{format.formatImgSize(song.picUrl, 60)}}" />
+  <view class="info">
+    <view class="name">{{song.name}}</view>
+    <view class="source">{{song.name}} · {{song.song.artists[0].name}}</view>
+  </view>
+  <view class="detail">
+    <image class="arrow" src="/assets/images/icons/arrow-right.png" />
+  </view>
+</view>

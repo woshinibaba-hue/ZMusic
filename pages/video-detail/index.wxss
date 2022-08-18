@@ -1,0 +1,32 @@
+/* pages/video-detail/index.wxss */
+page {
+  padding-top: 450rpx;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+}
+
+.video-info {
+  padding: 25rpx;
+}
+
+.video-detail {
+  color: #666;
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+}
+
+.video-detail .name, 
+.title {
+  font-weight: 700;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.mv-title {
+  margin: 15rpx 0;
+}

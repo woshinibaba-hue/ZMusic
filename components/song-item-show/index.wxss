@@ -1,0 +1,52 @@
+/* components/song-item-show/index.wxss */
+.song-item-show {
+  display: flex;
+  align-items: center;
+  height: 95rpx;
+  margin-bottom: 30rpx;
+}
+
+.index {
+  width: 120rpx;
+  text-align: center;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.name {
+  width: 400rpx;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+}
+
+.sq-icon {
+  width: 48rpx;
+  height: 30rpx;
+  margin-right: 18rpx;
+}
+
+.artist {
+  display: flex;
+  font-size: 28rpx;
+}
+
+.dot {
+  margin: 0 8rpx;
+}
+
+.artists {
+  max-width: 300rpx;
+}
+
+.album {
+  width: 220rpx;
+}

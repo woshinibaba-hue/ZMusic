@@ -1,0 +1,44 @@
+/* components/video-mv-item/index.wxss */
+.item {
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.cover {
+  position: relative;
+  width: 230rpx;
+}
+
+.img {
+  height: 120rpx;
+  border-radius: 7rpx;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+
+.info .name {
+  font-size: 28rpx;
+}
+
+.info .creator {
+  font-size: 24rpx;
+  color: #555;
+}
+
+.cover .video-info {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 16rpx;
+  left: 0;
+  width: 100%;
+  padding: 0 10rpx;
+  color: #fff;
+  font-size: 26rpx;
+}

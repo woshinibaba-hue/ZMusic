@@ -1,0 +1,10 @@
+/* pages/video/index.wxss */
+.video-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.video-item {
+  width: 46%;
+}

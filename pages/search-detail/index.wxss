@@ -1,0 +1,59 @@
+/* pages/search-detail/index.wxss */
+page {
+  padding: 0 20rpx;
+  padding: 44px 0 20rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+}
+
+.van-search__content {
+  background-color: #fff !important;
+}
+
+/* 热门搜索 */
+.hot-search {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-text {
+  font-size: 30rpx;
+  margin: 8rpx;
+  padding: 6rpx 14rpx;
+  border-radius: 12rpx;
+  background-color: #fff;
+}
+
+.item-text:first-of-type {
+  color: #26ce8a;
+}
+
+/* 搜索建议 */
+.searchKey {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin: 35rpx 0;
+  color: #26ce8a;
+}
+
+.list .item {
+  display: flex;
+  align-items: center;
+}
+
+.list .item .img {
+  width: 66rpx;
+}
+
+/* 搜索结果 */
+.song-list {
+  position: relative;
+  left: -20rpx;
+}

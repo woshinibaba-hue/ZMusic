@@ -1,0 +1,28 @@
+/* components/song-menu-item/index.wxss */
+.top {
+  position: relative;
+  /* 给父元素加上flex布局或者将其字体大小设置为0，即可解决图片底部3px距离问题 */
+  /* display: flex; */
+  font-size: 0;
+}
+
+.top .img {
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.play-count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 24rpx;
+  padding: 6rpx;
+  color: #fff;
+  border-radius: 8rpx;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.bottom {
+  width: 100%;
+  font-size: 28rpx;
+}

@@ -1,0 +1,31 @@
+/* components/video-list-item/index.wxss */
+.item {
+  margin-bottom: 10rpx;
+}
+
+.album {
+  position: relative;
+}
+
+.album .cover {
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.video-info {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 16rpx;
+  left: 0;
+  width: 100%;
+  padding: 0 10rpx;
+  color: #fff;
+  font-size: 26rpx;
+}
+
+.item .info {
+  width: 100%;
+  font-size: 26rpx;
+}
